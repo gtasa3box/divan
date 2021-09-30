@@ -64,6 +64,7 @@
         @media (min-width:601px) {
             font-size: 18px;
             line-height: 150%;
+            align-items: flex-start;
         }
         &::before {
             content: '';
