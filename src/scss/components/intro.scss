@@ -2,6 +2,11 @@
     padding-bottom: 255px;
     padding-top: 40px;
     position: relative;
+    @media (min-width:601px) {
+        padding: 176px 0;
+        max-width: 1520px;
+        margin: 0 auto;
+    }
     &:before {
         content: '';
         position: absolute;
@@ -13,6 +18,45 @@
         background-repeat: no-repeat;
         width: 360px;
         height: 200px;
+        @media (min-width:601px) {
+            background-image: url(../img/intro/div.png);
+            width: 646px;
+            height: 453px;
+            bottom: initial;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        @media (min-width:601px) and (max-width:1200px) {
+            opacity: 0.4;
+        }
+    }
+    &__gradient {
+        background: linear-gradient(230.31deg, #EDEDED 0%, rgba(237, 237, 237, 0) 38.61%);
+        &:after {
+            @media (min-width:601px) {
+                content: '';
+                position: absolute;
+                top: 160px;
+                left: 0px;
+                background-image: url(../img/intro/circle.png);
+                background-position: center;
+                background-size: contain;
+                background-repeat: no-repeat;
+                width: 267px;
+                height: 375px;
+            }
+            @media (min-width:601px) and (max-width:1200px) {
+                opacity: 0.4;
+            }
+        }
+    }
+    &__content {
+        @media (min-width:601px) {
+            max-width: 674px;
+            position: relative;
+            z-index: 2;
+        }
     }
     &__title {
         font-family: 'Montserrat',sans-serif;
@@ -22,6 +66,10 @@
         line-height: 120%;
         letter-spacing: 0.02em;
         color: #000000;
+        @media (min-width:601px) {
+            font-size: 60px;
+            max-width: 674px;
+        }
     }
     &__info {
         margin: 15px 0 32px;
@@ -32,6 +80,11 @@
         line-height: 150%;
         letter-spacing: 0.02em;
         color: rgba(0, 0, 0, 0.7);
+        @media (min-width:601px) {
+            margin: 40px 0 50px;
+            font-size: 18px;
+            max-width: 628px;
+        }
         span {
             font-weight: bold;
         }
