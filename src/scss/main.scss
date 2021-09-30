@@ -1,3 +1,6 @@
 // @import 'vars'; если используете scss-переменные - подключите сюда vars, но удалите root из _vars.scss
+@import "./components/burger";
+@import "./components/logo";
+@import "./components/nav";
 
 @import "./components/header";
