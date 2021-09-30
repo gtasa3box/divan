@@ -1,6 +1,6 @@
 .nav {
     position: absolute;
-    bottom: -200px;
+    bottom: -220px;
     flex-direction: column;
     align-items: center;
     width: 100%;
@@ -8,6 +8,7 @@
     opacity: 0;
     pointer-events: none;
     transition: 0.3s ease;
+    z-index: 3;
     @media (min-width:601px) {
         left: 0;
         opacity: 1;
@@ -33,9 +34,11 @@
         display: block;
         text-align: center;
         padding: 5px 0;
+        background-color: white;
         @media (min-width:601px) {
             width: initial;
             display: inline-block;
+            background-color: transparent;
         }
         @media (min-width:601px) and (max-width:1260px) {
             padding-right: 20px;
