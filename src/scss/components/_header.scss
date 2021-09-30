@@ -25,6 +25,11 @@
         }
     }
     &__content {
+        a {
+            &:hover {
+                opacity: 0.8;
+            }
+        }
         @media (min-width:601px) {
             width: 100%;
             display: flex;
@@ -57,11 +62,6 @@
     &__burger {
         @media (min-width:601px) {
             display: none;
-        }
-    }
-    a {
-        &:hover {
-            opacity: 0.8;
         }
     }
 }

@@ -1,0 +1,14 @@
+.howto {
+    padding-bottom: 110px;
+    &__info {
+        font-family: 'Geometria',sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 150%;
+        text-align: center;
+        letter-spacing: 0.02em;
+        color: rgba(0, 0, 0, 0.7);  
+        margin: 15px 0 26px;      
+    }
+}
