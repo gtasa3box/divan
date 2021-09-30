@@ -22,4 +22,13 @@
             }
           }
     }
+    &_white {
+        background: none;
+        color: black;
+        border: 1px solid #000000;
+        &:hover {
+            background-size: none;
+            animation: none;
+        }
+    }
 }

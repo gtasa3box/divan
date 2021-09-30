@@ -1,0 +1,15 @@
+.title {
+    h2 {
+        font-family: 'Montserrat',sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 120%;
+        text-align: center;
+        letter-spacing: 0.02em;
+        color: #000000;
+        @media (min-width:601px) {
+            font-size: 36px;
+        }
+    }
+}
