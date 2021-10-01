@@ -1,0 +1,76 @@
+.havequestions {
+    background: #F4F4F4;
+    border-radius: 20px;
+    padding: 25px 0 30px;
+    @media (min-width:601px) {
+        padding: 54px 0 59px;
+        max-width: 1520px;
+        margin: 0 auto;
+        padding-left: 57px;
+    }
+    &__content {
+        @media (min-width:601px) {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+        @media (min-width:601px) and (max-width:1250px) {
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+    &__title {
+        h2 {
+            font-family: 'Montserrat',sans-serif;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 120%;
+            text-align: center;
+            color: #000000; 
+            @media (min-width:601px) {
+                font-size: 48px;
+                text-align: left;
+            }  
+            @media (min-width:601px) and (max-width:1250px) {
+                text-align: center;
+            }         
+        }
+        p {
+            font-family: 'Geometria',sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 120%;
+            text-align: center;
+            color: #000000;  
+            max-width: 276px; 
+            margin: 10px auto 20px;
+            @media (min-width:601px) {
+                max-width: initial;
+                margin: 0;
+                font-size: 18px;
+                margin-top: 15px;
+            }
+            @media (min-width:601px) and (max-width:1250px) {
+                margin-bottom: 20px;
+            }
+        }
+    }
+    &__form {
+        @media (min-width:601px) {
+            width: 48%;
+            align-items: center;
+            .iti {
+                margin-bottom: 0;
+            }
+        }
+        @media (min-width:601px) and (max-width:1250px) {
+            width: 80%;
+        }
+        @media (min-width:601px) and (max-width:750px) {
+            width: 100%;
+        }
+    }
+}
