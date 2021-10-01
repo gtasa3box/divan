@@ -16,7 +16,7 @@ function cislo(){
 
 //slider
 $('.slider-howto').slick({
-    arrows: true,
+    arrows: false,
     infinite: true,
     speed: 300,
     slidesToShow: 3,
@@ -24,7 +24,7 @@ $('.slider-howto').slick({
     dots: false,
     responsive: [
       {
-        breakpoint: 1300,
+        breakpoint: 1500,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
@@ -34,7 +34,7 @@ $('.slider-howto').slick({
         }
       },
       {
-        breakpoint: 600,
+        breakpoint: 1000,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,

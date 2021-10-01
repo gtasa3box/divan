@@ -1,5 +1,21 @@
 .howto {
     padding-bottom: 110px;
+    position: relative;
+    @media (min-width:601px) {
+        &:before {
+            content: '';
+            position: absolute;
+            width: 354px;
+            height: 531px;
+            background-image: url(../img/howto/back.png);
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            right: 0;
+            bottom: 0;
+            z-index: -1;
+        }
+    }
     &__info {
         font-family: 'Geometria',sans-serif;
         font-style: normal;
@@ -9,6 +25,11 @@
         text-align: center;
         letter-spacing: 0.02em;
         color: rgba(0, 0, 0, 0.7);  
-        margin: 15px 0 26px;      
+        margin: 15px 0 26px;  
+        @media (min-width:601px) {
+            font-size: 18px;
+            margin: 30px auto 60px; 
+            max-width: 753px;
+        }    
     }
 }
