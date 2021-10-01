@@ -1,0 +1,31 @@
+.reviews {
+    padding: 0 0 80px;
+    @media (min-width:601px) {
+        padding-bottom: 150px;
+    }
+    &__slider {
+        margin-top: 40px;
+        @media (min-width:601px) {
+            margin-top: 48px;
+        }
+    }
+    &__btn {
+        margin-top: 85px;
+        width: 100%;
+        height: 50px;
+        font-family: 'Montserrat',sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 120%;
+        text-align: center;
+        letter-spacing: 0.02em;
+        color: #FFFFFF;
+        @media (min-width:601px) {
+            margin: 0 auto;
+            margin-top: 70px;
+            width: 252px;
+            font-size: 18px;
+        }
+    }
+}

@@ -2,6 +2,20 @@
     padding: 0 0 80px;
     @media (min-width:601px) {
         padding: 150px 0 160px;
+        position: relative;
+        &:before {
+            content: '';
+            position: absolute;
+            width: 354px;
+            height: 531px;
+            background-image: url(../img/howto/back.png);
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            left: 0;
+            top: 0;
+            z-index: -1;
+        }
     }
     &__content {
         padding-top: 40px;

@@ -14,7 +14,7 @@ function cislo(){
     event.preventDefault();
 }
 
-//slider
+//slider-howto
 $('.slider-howto').slick({
     arrows: false,
     infinite: true,
@@ -43,4 +43,35 @@ $('.slider-howto').slick({
         }
       }
     ]
+});
+
+//slider-reviews
+$('.slider-reviews').slick({
+  arrows: true,
+  infinite: true,
+  speed: 300,
+  slidesToShow: 2,
+  slidesToScroll: 1,
+  dots: true,
+  responsive: [
+    {
+      breakpoint: 1200,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: false,
+        arrows: false,
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        dots: true
+      }
+    }
+  ]
 });
