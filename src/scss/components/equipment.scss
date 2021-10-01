@@ -1,5 +1,5 @@
 .equipment {
-    padding: 50px 0 42px;
+    padding: 50px 0 0;
     @media (min-width:601px) {
         background-color: #F4F4F4; 
         padding: 80px 0 65px;
@@ -9,6 +9,15 @@
         flex-direction: column;
         align-items: center;
         padding: 30px 0 112px;
+        @media (min-width:601px) {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 30px 0 0;
+        }
+        @media (min-width:601px) and (max-width: 1247px) {
+            justify-content: center;
+        }
         p {
             font-family: 'Geometria',sans-serif;
             font-style: normal;
@@ -18,21 +27,38 @@
             text-align: center;
             letter-spacing: 0.02em;
             color: rgba(0, 0, 0, 0.7);
+            @media (min-width:601px) {
+                text-align: left;
+                font-size: 18px;
+            }
         }
         
     }
     &__text {
         &-1 {
             padding: 40px 0 35px;
+            @media (min-width:601px) {
+                display: block;
+                width: 730px;
+                padding: 0;
+                margin: 44px 0 70px;
+            }
         }
         &-2 {
             padding: 35px 0 20px;
+            @media (min-width:601px) {
+                width: 852px;
+                order: 1;
+            }
         }
     }
     &__benefits {
         display: flex;
         flex-wrap: wrap;
         margin-top: 40px;
+        @media (min-width:601px) {
+            margin-top: 46px;
+        }
         a {
             width: 44px;
             height: 44px;
@@ -40,6 +66,11 @@
             background-position: center;
             background-repeat: no-repeat;
             margin-bottom: 15px;
+            @media (min-width:601px) {
+                margin-bottom: 0;
+                width: 59px;
+                height: 59px;
+            }
         }
         p {
             text-align: left;
@@ -50,6 +81,11 @@
             line-height: 150%;
             letter-spacing: 0.02em;
             color: #000000;
+            @media (min-width:601px) {
+                font-size: 16px;
+                margin-left: 32px;
+                max-width: 228px;
+            }
         }
     }
     &__item {
@@ -57,6 +93,11 @@
         display: flex;
         flex-direction: column;
         margin-bottom: 30px;
+        @media (min-width:601px) {
+            flex-direction: row;
+            align-items: center;
+            margin-bottom: 48px;
+        }
     }
     &__img {
         display: block;
@@ -71,6 +112,7 @@
                 background-image: url(../img/equipment/1-big.png);
                 width: 608px;
                 height: 417px;
+                margin: 70px 0 80px;
             }
         }
         &-2 {
@@ -80,6 +122,13 @@
             @media (min-width:601px) {
                 width: 563px;
                 height: 381px;
+                order: 2;
+            }
+            @media (min-width:601px) and (max-width: 1445px) {
+                width: 30%;
+            }
+            @media (min-width:601px) and (max-width: 1247px) {
+                width: 100%;
             }
         }
     }
@@ -95,5 +144,11 @@
         letter-spacing: 0.02em;
         text-transform: uppercase;
         color: #FFFFFF;
+        @media (min-width:601px) {
+            order: 3;
+        }
+        @media (min-width:601px) and (max-width: 1247px) {
+            margin-top: 30px;
+        }
     }
 }
