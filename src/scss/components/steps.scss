@@ -1,0 +1,96 @@
+.steps {
+    padding-bottom: 20px;
+    @media (min-width:601px) {
+        padding-bottom: 90px;
+        position: relative;
+        &:before {
+            content: '';
+            position: absolute;
+            width: 354px;
+            height: 531px;
+            background-image: url(../img/howto/back.png);
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            right: 0;
+            bottom: 0;
+            z-index: -1;
+        }        
+    }
+    &__content {
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+        @media (min-width:601px) {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 70px;
+        }
+    }
+    &__step {
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
+        @media (min-width:601px)  {
+            width: 30%;
+            margin-bottom: 60px;
+            position: relative;
+            &:before {
+                content: '';
+                position: absolute;
+                background-image: url(../img/steps/arrow.svg);
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
+                width: 74px;
+                height: 37px;
+                right: 0;
+                @media (min-width:601px) and (max-width:1350px) {
+                    content: none;
+                }
+            }
+            &.not-before {
+                &:before {
+                    content: none;
+                }
+            }
+        }
+        @media (min-width:601px) and (max-width:880px) {
+            width: 45%;
+        }
+        a {
+            width: 85px;
+            height: 85px;
+            background: linear-gradient(45deg, #74077E 0%, #7B6AA5 51.04%, #81C8CA 100%);
+            font-family: 'Montserrat',sans-serif;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 44px;
+            line-height: 120%;
+            color: #FFFFFF;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            margin-right: 20px;
+            flex: none;
+            @media (min-width:601px) {
+                margin-right: 30px;
+            }
+        }
+        p {
+            font-family: 'Montserrat',sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 130%;
+            letter-spacing: 0.02em;
+            color: #000000;
+            @media (min-width:601px)  {
+                max-width: 217px; 
+                font-size: 18px;
+            }           
+        }
+    }
+}
