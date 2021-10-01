@@ -1,0 +1,95 @@
+.backcall {
+    padding-top: 80px;
+    padding-bottom: 70px;
+    @media (min-width:601px) {
+        padding-top: 150px;
+        padding-bottom: 120px;
+    }
+    &__content {
+        margin-top: 35px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @media (min-width:601px) {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 70px;
+        }
+        @media (min-width:601px) and (max-width: 1357px) {
+            justify-content: center;
+        }
+    }
+    &__map {
+        position: relative;
+        width: 345px;
+        height: 211px;
+        @media (min-width:601px) {
+            width: 730px;
+            height: 449px;
+        }
+        a {
+            display: block;
+            background-image: url(../img/backcall/map.png);
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 100%;
+        }
+        &-info {
+            position: absolute;
+            background-color: #EDEDED;
+            width: 298px;
+            height: 69px;
+            border-radius: 15px;
+            padding: 14px 17px;
+            left:50%;
+            transform: translateX(-50%);
+            bottom: -15%;
+            @media (min-width:601px) {
+                width: 395px;
+                height: 101px;
+                transform: translateX(0);
+                left: 72px;
+                bottom: -50px;
+                padding: 24px 30px;
+            }
+            span {
+                font-family: 'Montserrat',sans-serif;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 14px;
+                line-height: 120%;
+                color: #000000;
+                @media (min-width:601px) {
+                    font-size: 18px;
+                }
+            }
+            p {
+                font-family: 'Geometria',sans-serif;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 12px;
+                line-height: 150%;
+                letter-spacing: 0.02em;
+                color: #000000;
+                margin-top: 7px;
+                @media (min-width:601px) {
+                    font-size: 14px;
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+    &__form {
+        margin-top: 70px;
+        @media (min-width:601px) {
+            width: 45%;
+        }
+        @media (min-width:601px) and (max-width: 1357px) {
+            width: 80%;
+        }
+    }
+}
