@@ -75,3 +75,7 @@ $('.slider-reviews').slick({
     }
   ]
 });
+
+$(function() {
+  $('.lazy').Lazy();
+});
