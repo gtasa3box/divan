@@ -1,7 +1,30 @@
-<div class="popup-master">
-
+<div class="popup-master" style="display: none;" id="popup-master">
+    <div class="popup-master__title title">
+        <h2>Вызов мастера</h2>
+    </div>
+    <form action="" class="form-popup-master">
+        <input type="name" placeholder="Введите имя" required>
+        <input type="tel" placeholder="Введите свой телефон" required maxlength="14" onKeyPress="cislo()">
+        <select class="popup-master__select" name="" id="">
+            <option disabled selected hidden>Категория услуг</option>
+            <option value="">Услуга</option>
+            <option value="">Услуга</option>
+            <option value="">Услуга</option>
+        </select>
+        <input type="submit" class="btn">
+    </form>
+    <p>- Наш менеджер свяжеться с вами в ближайшее время.</p>
 </div>
 
- <div class="popup-call">
-     
+ <div class="popup-call form-popup-master" style="display: none;" id="popup-call">
+    <div class="popup-master__title title">
+        <h2>Заказать звонок</h2>
+    </div>
+    <form action="" class="form-popup-call">
+        <input type="name" placeholder="Введите имя" required>
+        <input type="tel" placeholder="Введите свой телефон" required maxlength="14" onKeyPress="cislo()">
+        <p>- Наш менеджер свяжеться с вами в ближайшее время.</p>
+        <input type="submit" class="btn">
+    </form>
+    
  </div>

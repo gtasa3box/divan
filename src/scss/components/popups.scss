@@ -1,0 +1,40 @@
+.popup {
+    &-master {
+        p {
+            font-family: 'Geometria',sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 120%;
+            color: rgba(0, 0, 0, 0.7);
+            @media (min-width:601px) {
+                font-size: 14px;
+            }
+        }
+    }
+    &-call {
+        p {
+            font-family: 'Geometria',sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 120%;
+            color: rgba(0, 0, 0, 0.7);
+            display: block;
+            position: absolute;
+            bottom: -38px;
+            left: 24px;
+            @media (min-width:601px) {
+                font-size: 14px;
+                display: flex;
+                align-items: center;
+                max-width: 245px;
+                margin-left: 28px;
+                position: relative;
+                bottom: initial;
+                left:initial;
+            }
+        }
+    }
+    
+}
