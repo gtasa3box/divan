@@ -20,6 +20,10 @@
                     width: 465px;
                     height: 299px;
                 }
+                @media (min-width:601px) and (max-width:1281px) {
+                    width: 313px;
+                    height: 201px;
+                }
                 &:after {
                     content: '';
                     position: absolute;
@@ -33,6 +37,9 @@
                     background-repeat: no-repeat;
                     @media (min-width:601px) {
                         background-size: 94px 94px;
+                    }
+                    @media (min-width:601px) and (max-width:1281px) {
+                        background-size: 64px 64px;
                     }
                 }
             }
@@ -82,6 +89,10 @@
                 height: 220px;
                 padding: 40px;
             }
+            @media (min-width:601px) and (max-width:1281px) {
+                padding: 26px;
+                height: initial;
+            }
         }
         &__name {
             display: flex;
@@ -98,6 +109,10 @@
                     width: 89px;
                     height: 89px;
                 }
+                @media (min-width:601px) and (max-width:1281px) {
+                    width: 60px;
+                    height: 60px;                    
+                }
             }
             p {
                 font-family: 'Montserrat',sans-serif;
@@ -112,6 +127,10 @@
                 @media (min-width:601px) {
                     margin: 20px 0 0;
                     font-size: 14px;
+                }
+                @media (min-width:601px) and (max-width:1281px) {
+                    margin-top: 13px;
+                    font-size: 10px;
                 }
             }
         }
@@ -128,7 +147,11 @@
                 font-size: 18px;
                 text-align: left;
                 margin-left: 30px;
-            }                      
+            } 
+            @media (min-width:601px) and (max-width:1281px) {
+                font-size: 12px;
+                margin-left: 12px;
+            }                     
         }
         //dots
         .slick-dots {
@@ -147,6 +170,10 @@
                 width: 17px;
                 height: 17px;
             }
+            @media (min-width:601px) and (max-width:1281px) {
+                width: 12px;
+                height: 12px;
+            }
         }
         .slick-dots li button {
             width: 10px;
@@ -154,6 +181,10 @@
             @media (min-width:601px) {
                 width: 17px;
                 height: 17px;
+            }
+            @media (min-width:601px) and (max-width:1281px) {
+                width: 12px;
+                height: 12px;
             }
             &:before {
                 opacity: 1;
@@ -166,6 +197,10 @@
                 @media (min-width:601px) {
                     width: 17px;
                     height: 17px;
+                }
+                @media (min-width:601px) and (max-width:1281px) {
+                    width: 12px;
+                    height: 12px;
                 }
             }
         }

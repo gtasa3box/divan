@@ -37,6 +37,11 @@
             position: relative;
             z-index: 2;
         }
+        @media (min-width:601px) and (max-width:1281px) {
+            width: 200px;
+            margin-left: -200px;
+            font-size: 12px;
+        }
     }
     .iti {
         width: 100%;

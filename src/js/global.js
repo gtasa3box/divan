@@ -34,6 +34,15 @@ $('.slider-howto').slick({
         }
       },
       {
+        breakpoint: 1290,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          arrows: false,
+          dots: false,
+        }
+      },
+      {
         breakpoint: 1000,
         settings: {
           slidesToShow: 1,

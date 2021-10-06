@@ -15,7 +15,14 @@
             left: 0;
             top: 0;
             z-index: -1;
+            @media (min-width:601px) and (max-width:1281px) {
+                width: 267px;
+                height: 400px;
+            }
         }
+    }
+    @media (min-width:601px) and (max-width:1281px) {
+        padding: 100px 0 140px; 
     }
     &__content {
         padding-top: 40px;
@@ -29,12 +36,19 @@
         @media (min-width:601px) and (max-width: 1489px) {
             justify-content: space-evenly;
         }
+        @media (min-width:601px) and (max-width:1281px) {
+            justify-content: space-between;
+            margin-top: 60px;
+        }
     }
     &__item {
         display: flex;
         margin-bottom: 20px;
         @media (min-width:601px) {
             margin-bottom: 60px;
+        }
+        @media (min-width:601px) and (max-width:1281px) {
+            margin-bottom: 40px;
         }
         a {
             display: block;
@@ -46,6 +60,10 @@
             @media (min-width:601px) {
                 width: 365px;
                 height: 316px;
+            }
+            @media (min-width:601px) and (max-width:1281px) {
+                width: 245px;
+                height: 212px;
             }
         }
         span {
@@ -69,6 +87,11 @@
                 height: 40px;
                 font-size: 18px;
             }
+            @media (min-width:601px) and (max-width:1281px) {
+                width: 89px;
+                height: 27px;
+                font-size: 12px;
+            }
         }
         &-left {
             position: relative;
@@ -79,11 +102,18 @@
                 border-radius: 20px 0px 0px 20px; 
                 border-right: 3px solid #74077E;
             }
+            @media (min-width:601px) and (max-width:1281px) {
+                border-radius: 13px 0px 0px 13px;
+                border-right: 2px solid #74077E;
+            }
             span {
                 left: 0;
                 border-radius: 9px 0px;
                 @media (min-width:601px) {
                     border-radius: 20px 0px;
+                }
+                @media (min-width:601px) and (max-width:1281px) {
+                    border-radius: 13px 0px;
                 }
             }
         }
@@ -94,11 +124,17 @@
             @media (min-width:601px) {
                 border-radius: 0px 20px 20px 0px; 
             }
+            @media (min-width:601px) and (max-width:1281px) {
+                border-radius:0 13px 13px 0px;
+            }
             span {
                 right: 0;
                 border-radius: 0px 9px;
                 @media (min-width:601px) {
                     border-radius: 0px 20px;
+                }
+                @media (min-width:601px) and (max-width:1281px) {
+                    border-radius:0 13px;
                 }
             }
         }
@@ -121,6 +157,11 @@
             width: 252px;
             height: 50px;
             font-size: 18px;
+        }
+        @media (min-width:601px) and (max-width:1281px) {
+            width: 224px;
+            height: 44px;
+            font-size: 16px;
         }
     }
 }
