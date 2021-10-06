@@ -5,6 +5,9 @@
     @media (min-width:601px) {
         padding-top: 70px;
     }
+    @media (min-width:601px) and (max-width:1281px) {
+        padding: 60px 0 30px;
+    }
     &__content {
         margin-top: 50px;
         display: flex;
@@ -12,6 +15,9 @@
         flex-wrap: wrap;
         @media (min-width:601px) {
             margin-top: 76px;
+        }
+        @media (min-width:601px) and (max-width:1281px) {
+            margin-top: 50px;
         }
     }
     &__elem {
@@ -27,6 +33,9 @@
         @media (min-width:601px) and (max-width:800px) {
             width: 45%;
         }
+        @media (min-width:601px) and (max-width:1281px) {
+            margin-bottom: 60px;
+        }
         a {
             display: block;
             background-size: contain;
@@ -39,6 +48,11 @@
                 width: 80px;
                 height: 80px;
                 margin-bottom: 30px;
+            }
+            @media (min-width:601px) and (max-width:1281px) {
+                width: 63px;
+                height: 63px;
+                margin-bottom: 20px;
             }
         }
         p {
@@ -53,6 +67,10 @@
             @media (min-width:601px) {
                 max-width: 346px;
                 font-size: 18px;
+            }
+            @media (min-width:601px) and (max-width:1281px) {
+                font-size: 14px;
+                max-width: 250px;
             }
         }
     }

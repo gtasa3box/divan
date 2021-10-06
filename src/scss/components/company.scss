@@ -3,6 +3,9 @@
     @media (min-width:601px) {
         padding-bottom: 102px;
     }
+    @media (min-width:601px) and (max-width:1281px) {
+        padding-bottom: 150px;
+    }
     &__content {
         margin-top: 30px;
         display: flex;
@@ -14,9 +17,8 @@
             justify-content: space-between;
             margin-top: 7px;
         }
-        @media (min-width:601px) and (max-width:1418px) {
-            justify-content: space-around;
-            margin-top: 30px;
+        @media (min-width:601px) and (max-width:1281px) {
+            margin-top: 42px;
         }
     }
     &__logo {
@@ -26,9 +28,9 @@
             width: 527px;
             height: 526px;
         }
-        @media (min-width:601px) and (max-width:1418px) {
-            width: 260px;
-            height: 260px; 
+        @media (min-width:601px) and (max-width:1281px) {
+            width: 353px;
+            height: 349px;
         }
     }
     &__text {
@@ -49,6 +51,10 @@
                 margin: 0;
                 font-size: 18px;
             }
+            @media (min-width:601px) and (max-width:1281px) {
+                max-width: 618px;
+                font-size: 14px;
+            }
         }
         &-2 {
             font-family: 'Geometria',sans-serif;
@@ -63,6 +69,9 @@
                 width: 100%;
                 text-align: left;
                 font-size: 18px;
+            }
+            @media (min-width:601px) and (max-width:1281px) {
+                font-size: 14px;
             }
         }
     }
@@ -84,10 +93,18 @@
             margin: 40px 0 40px;
             padding: 30px 37px;
         }
+        @media (min-width:601px) and (max-width:1281px) {
+            max-width: 618px;
+            margin: 30px 0 40px;
+            padding: 26px 20px;
+        }
         &-elem {
             display: flex;
             align-items: center;
             &:not(:last-child) {
+                margin-bottom: 15px;
+            }
+            @media (min-width:601px) and (max-width:1281px) {
                 margin-bottom: 15px;
             }
         }
@@ -102,6 +119,10 @@
                 font-size: 36px;
                 margin-right: 24px;
             }
+            @media (min-width:601px) and (max-width:1281px) {
+                font-size: 30px;
+                margin-right: 10px;
+            }
         }
         p {
             font-weight: normal;
@@ -111,6 +132,10 @@
             color: #000000;
             @media (min-width:601px) {
                 font-size: 16px;
+            }
+            @media (min-width:601px) and (max-width:1281px) {
+                font-size: 14px;
+                max-width: 265px;
             }
         }
     }
