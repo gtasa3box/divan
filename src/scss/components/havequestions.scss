@@ -11,11 +11,17 @@
     @media (min-width:601px) and (max-width:1281px) {
         max-width: 1020px;
     }
+    @media (min-width:601px) and (max-width:769px) {
+        padding: 20px;
+    }
     &__content {
         @media (min-width:601px) {
             display: flex;
             justify-content: space-between;
             align-items: flex-end;
+        }
+        @media (min-width:601px) and (max-width:769px) {
+            flex-wrap: wrap;
         }
         
     }
@@ -34,7 +40,10 @@
             }    
             @media (min-width:601px) and (max-width:1281px) {
                 font-size: 30px;
-            }       
+            }  
+            @media (min-width:601px) and (max-width:769px) {
+                font-size: 21px;
+            }     
         }
         p {
             font-family: 'Geometria',sans-serif;
@@ -57,6 +66,10 @@
                 text-align: left;
                 max-width: 375px;
             }
+            @media (min-width:601px) and (max-width:769px) {
+                font-size: 10px;
+                width: 265px;
+            }
         }
     }
     &__form {
@@ -72,6 +85,10 @@
         }
         @media (min-width:601px) and (max-width:1281px) {
             width: 55%;
+        }
+        @media (min-width:601px) and (max-width:769px) {
+            width: 100%;
+            margin-top: 20px;
         }
     }
 }

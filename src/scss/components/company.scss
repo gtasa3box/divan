@@ -32,6 +32,10 @@
             width: 353px;
             height: 349px;
         }
+        @media (min-width:601px) and (max-width:769px) {
+            width: 251.95px;
+            height: 249.09px;
+        }
     }
     &__text {
         &-1 {
@@ -55,6 +59,10 @@
                 max-width: 618px;
                 font-size: 14px;
             }
+            @media (min-width:601px) and (max-width:769px) {
+                max-width: 441px;
+                font-size: 10px;
+            }
         }
         &-2 {
             font-family: 'Geometria',sans-serif;
@@ -72,6 +80,9 @@
             }
             @media (min-width:601px) and (max-width:1281px) {
                 font-size: 14px;
+            }
+            @media (min-width:601px) and (max-width:769px) {
+                font-size: 10px;
             }
         }
     }
@@ -98,6 +109,10 @@
             margin: 30px 0 40px;
             padding: 26px 20px;
         }
+        @media (min-width:601px) and (max-width:769px) {
+            max-width: 441.08px;
+            padding: 18px 20px;
+        }
         &-elem {
             display: flex;
             align-items: center;
@@ -123,6 +138,10 @@
                 font-size: 30px;
                 margin-right: 10px;
             }
+            @media (min-width:601px) and (max-width:769px) {
+                font-size: 21px;
+                margin-right: 7px;
+            }
         }
         p {
             font-weight: normal;
@@ -136,6 +155,10 @@
             @media (min-width:601px) and (max-width:1281px) {
                 font-size: 14px;
                 max-width: 265px;
+            }
+            @media (min-width:601px) and (max-width:769px) {
+                font-size: 10px;
+                max-width: 189.14px;
             }
         }
     }

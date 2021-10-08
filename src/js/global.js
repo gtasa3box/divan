@@ -45,6 +45,24 @@ $('.slider-howto').slick({
       {
         breakpoint: 1000,
         settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          arrows: false,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 780,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          arrows: false,
+          dots: true,
+        }
+      },
+      {
+        breakpoint: 650,
+        settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
           arrows: false,
@@ -71,6 +89,16 @@ $('.slider-reviews').slick({
         infinite: true,
         dots: false,
         arrows: false,
+      }
+    },
+    {
+      breakpoint: 780,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: true,
+        arrows: true,
       }
     },
     {

@@ -24,6 +24,10 @@
                     width: 313px;
                     height: 201px;
                 }
+                @media (min-width:601px) and (max-width:769px) {
+                    width: 223.4px;
+                    height: 143.46px;
+                }
                 &:after {
                     content: '';
                     position: absolute;
@@ -40,6 +44,9 @@
                     }
                     @media (min-width:601px) and (max-width:1281px) {
                         background-size: 64px 64px;
+                    }
+                    @media (min-width:601px) and (max-width:769px) {
+                        background-size: 45px 45px;
                     }
                 }
             }
@@ -70,9 +77,15 @@
         }
         .slick-slide {
             margin: 0 30px;
+            @media (min-width:601px) and (max-width:769px) {
+                margin: 0 20px;
+            }
         }
         .slick-list {
             margin: 0 -30px;
+            @media (min-width:601px) and (max-width:769px) {
+                margin: 0 -20px;
+            }
         }
     }
     &-reviews {
@@ -92,6 +105,9 @@
             @media (min-width:601px) and (max-width:1281px) {
                 padding: 26px;
                 height: initial;
+            }
+            @media (min-width:601px) and (max-width:769px) {
+                padding: 19px;
             }
         }
         &__name {
@@ -132,6 +148,9 @@
                     margin-top: 13px;
                     font-size: 10px;
                 }
+                @media (min-width:601px) and (max-width:769px) {
+                    margin-top: 8px;
+                }
             }
         }
         &__text {
@@ -151,7 +170,11 @@
             @media (min-width:601px) and (max-width:1281px) {
                 font-size: 12px;
                 margin-left: 12px;
-            }                     
+            }   
+            @media (min-width:601px) and (max-width:769px) {
+                font-size: 9px;
+                line-height: 150%;
+            }                  
         }
         //dots
         .slick-dots {
