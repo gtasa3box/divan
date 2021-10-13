@@ -7,9 +7,13 @@
         max-width: 1520px;
         margin: 0 auto;
     }
-    @media (min-width:601px) and (max-width:1281px) {
+    @media (min-width: 1200px) and (max-width: 1601px) {
         max-width: 1020px;
         padding: 100px 0;
+    }
+    @media (min-width: 601px) and (max-width: 1199px) {
+        max-width: 728px;
+        padding: 56px 0 68px;
     }
     &:before {
         content: '';
@@ -31,13 +35,14 @@
             top: 50%;
             transform: translateY(-50%);
         }
-        @media (min-width:601px) and (max-width:1000px) {
-            opacity: 0.4;
-        }
-        @media (min-width:601px) and (max-width:1281px) {
+        @media (min-width: 1200px) and (max-width: 1601px) {
             width: 565px;
             height: 301px;
             right: -90px;
+        }
+        @media (min-width: 601px) and (max-width: 1199px) {
+            width: 344px;
+            height: 183px;
         }
     }
     &__gradient {
@@ -55,12 +60,12 @@
                 width: 267px;
                 height: 375px;
             }
-            @media (min-width:601px) and (max-width:1000px) {
-                opacity: 0.4;
-            }
-            @media (min-width:601px) and (max-width:1281px) {
+            @media (min-width: 1200px) and (max-width: 1601px) {
                 width: 178px;
                 height: 252px;
+            }
+            @media (min-width: 601px) and (max-width: 1199px) {
+                display: none;
             }
         }
     }
@@ -70,8 +75,11 @@
             position: relative;
             z-index: 2;
         }
-        @media (min-width:601px) and (max-width:1281px) {
+        @media (min-width: 1200px) and (max-width: 1601px) {
             max-width: 490px;
+        }
+        @media (min-width: 601px) and (max-width: 1199px) {
+            max-width: 350px;
         }
     }
     &__title {
@@ -86,9 +94,12 @@
             font-size: 60px;
             max-width: 674px;
         }
-        @media (min-width:601px) and (max-width:1281px) {
+        @media (min-width: 1200px) and (max-width: 1601px) {
             font-size: 40px;
             max-width: 490px;
+        }
+        @media (min-width: 601px) and (max-width: 1199px) {
+            font-size: 26px;
         }
     }
     &__info {
@@ -105,10 +116,14 @@
             font-size: 18px;
             max-width: 628px;
         }
-        @media (min-width:601px) and (max-width:1281px) {
+        @media (min-width: 1200px) and (max-width: 1601px) {
             font-size: 14px;
             max-width: 490px;
             margin: 20px 0 45px;
+        }
+        @media (min-width: 601px) and (max-width: 1199px) {
+            font-size: 10px;
+            margin: 13px 0 29px;
         }
         span {
             font-weight: bold;

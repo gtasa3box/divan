@@ -19,19 +19,25 @@
                 left: -39px;
                 top: 50%;
                 transform: translateY(-50%);
-                @media (min-width:601px) and (max-width:1281px) {
+                @media (min-width:1200px) and (max-width:1601px) {
                     width: 24px;
                     height: 24px;
                     left: -31px;
                 }
+                @media (min-width:601px) and (max-width:1199px) {
+                    width: 15.8px;
+                    height: 15.8px;
+                    left: -22px;
+                }
             }
         }
-        @media (min-width:601px) and (max-width:920px) {
-            display: none;
-        }
-        @media (min-width:601px) and (max-width:1281px) {
+        @media (min-width:1200px) and (max-width:1601px) {
             font-size: 16px;
             line-height: 20px;
+        }
+        @media (min-width:601px) and (max-width:1199px) {
+            font-size: 10px;
+            line-height: 13px;
         }
     }
     &__email {
@@ -58,16 +64,25 @@
                 left: -39px;
                 top: 50%;
                 transform: translateY(-50%);
-                @media (min-width:601px) and (max-width:1281px) {
+                @media (min-width:1200px) and (max-width:1601px) {
                     width: 24px;
                     height: 24px;
                     left: -31px;
                 }
+                @media (min-width:601px) and (max-width:1199px) {
+                    width: 15.8px;
+                    height: 15.8px;
+                    left: -22px;
+                }
             }
         }
-        @media (min-width:601px) and (max-width:1281px) {
+        @media (min-width:1200px) and (max-width:1601px) {
             font-size: 16px;
             line-height: 20px;
+        }
+        @media (min-width:601px) and (max-width:1199px) {
+            font-size: 10px;
+            line-height: 13px;
         }
     }
     &__numbers {
@@ -81,12 +96,13 @@
         color: #000000;
         @media (min-width:601px) {
             font-size: 18px;
-            line-height: 150%;
             align-items: flex-start;
         }
-        @media (min-width:601px) and (max-width:1281px) {
+        @media (min-width:1200px) and (max-width:1601px) {
             font-size: 16px;
-            line-height: 150%;
+        }
+        @media (min-width:601px) and (max-width:1199px) {
+            font-size: 10px;
         }
         &::before {
             content: '';
@@ -106,10 +122,15 @@
                 top: 50%;
                 transform: translateY(-50%);
             }
-            @media (min-width:601px) and (max-width:1281px) {
+            @media (min-width:1200px) and (max-width:1601px) {
                 width: 24px;
                 height: 24px;
                 left: -31px;
+            }
+            @media (min-width:601px) and (max-width:1199px) {
+                width: 15.8px;
+                height: 15.8px;
+                left: -22px;
             }
         }
         a {

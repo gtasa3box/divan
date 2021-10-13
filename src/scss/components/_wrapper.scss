@@ -4,8 +4,13 @@
         max-width: 1520px;
         margin: 0 auto;
     }
-    @media (min-width:601px) and (max-width:1281px) {
+    @media (min-width:1200px) and (max-width:1601px) {
         max-width: 1020px;
+        padding: 0;
+    }
+    @media (min-width: 601px) and (max-width: 1199px) {
+        max-width: 728px;
+        padding: 0;
     }
 }
 html {

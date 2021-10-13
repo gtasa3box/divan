@@ -24,17 +24,7 @@ $('.slider-howto').slick({
     dots: false,
     responsive: [
       {
-        breakpoint: 1500,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-          infinite: true,
-          dots: true,
-          arrows: false,
-        }
-      },
-      {
-        breakpoint: 1290,
+        breakpoint: 1601,
         settings: {
           slidesToShow: 3,
           slidesToScroll: 1,
@@ -43,25 +33,7 @@ $('.slider-howto').slick({
         }
       },
       {
-        breakpoint: 1000,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-          arrows: false,
-          dots: true
-        }
-      },
-      {
-        breakpoint: 780,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 1,
-          arrows: false,
-          dots: true,
-        }
-      },
-      {
-        breakpoint: 650,
+        breakpoint: 600,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,

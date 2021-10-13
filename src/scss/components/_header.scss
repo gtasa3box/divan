@@ -12,16 +12,15 @@
         @media (min-width:601px) {
             height: 140px;
         }
-        @media (min-width:601px) and (max-width:1560px) {
-            padding: 0 20px;
+        @media (min-width:601px) and (max-width:1199px) {
+            max-width: 728px;
+            padding: 0;
+            height: 80px;
         }
-        @media (min-width:601px) and (max-width:1281px) {
+        @media (min-width:1200px) and (max-width:1601px) {
             max-width: 1020px;
             padding: 0;
             height: 120px;
-        }
-        @media (min-width:601px) and (max-width:1040px) {
-            padding: 0 20px;
         }
     }
     &__logo {
@@ -31,10 +30,15 @@
             width: 120px;
             height: 129px;
         }
-        @media (min-width:601px) and (max-width:1281px) {
+        @media (min-width:1200px) and (max-width:1601px) {
             width: 88px;
             height: 96px;
             margin-top: 12px;
+        }
+        @media (min-width:601px) and (max-width:1199px) {
+            width: 65px;
+            height: 70px;
+            margin-top: 5px;
         }
     }
     &__content {
@@ -59,9 +63,12 @@
             width: 80%;
             height: 70px;
         }
-        @media (min-width:601px) and (max-width:1281px) {
+        @media (min-width:1199px) and (max-width:1601px) {
             height: 60px;
             width: 90%;
+        }
+        @media (min-width:601px) and (max-width:1199px) {
+            height: 40px;
         }
     }
     &__nav {
@@ -75,8 +82,12 @@
             display: flex;
             justify-content: center;
         }
-        @media (min-width:601px) and (max-width:1281px) {
+        @media (min-width:1199px) and (max-width:1601px) {
             height: 60px;
+            width: initial;
+        }
+        @media (min-width:601px) and (max-width:1199px) {
+            height: 40px;
             width: initial;
         }
     }

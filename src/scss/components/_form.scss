@@ -18,6 +18,13 @@
             font-size: 14px;
             line-height: 120%;
             color: rgba(0, 0, 0, 0.5);
+            @media (min-width: 601px) and (max-width: 1199px) {
+                font-size: 10px;
+            }
+        }
+        @media (min-width: 601px) and (max-width: 1199px) {
+            height: 32.79px;
+            padding-left: 65px;
         }
     }
     input[type=submit] {
@@ -37,10 +44,16 @@
             position: relative;
             z-index: 2;
         }
-        @media (min-width:601px) and (max-width:1281px) {
+        @media (min-width:1200px) and (max-width:1601px) {
             width: 200px;
             margin-left: -200px;
             font-size: 12px;
+        }
+        @media (min-width: 601px) and (max-width: 1199px) {
+            width: 131px;
+            margin-left: -131px;
+            font-size: 8px;
+            height: 32.79px;
         }
     }
     .iti {
@@ -83,7 +96,7 @@
                     margin-bottom: 30px;
                     height: 60px;
                 }
-                @media (min-width:601px) and (max-width:1281px) {
+                @media (min-width:1200px) and (max-width:1601px){
                     width: 225px;
                     height: 40px;
                     margin-bottom: 20px;
@@ -98,7 +111,7 @@
                     @media (min-width:601px) {
                         font-size: 16px;
                     }
-                    @media (min-width:601px) and (max-width:1281px) {
+                    @media (min-width:1200px) and (max-width:1601px) {
                         font-size: 12px;
                     }
                 }
@@ -123,7 +136,7 @@
                 height: 60px;
                 font-size: 16px;
             }
-            @media (min-width:601px) and (max-width:1281px) {
+            @media (min-width:1200px) and (max-width:1601px) {
                 width: 225px;
                 height: 40px;
                 font-size: 14px;
@@ -144,7 +157,7 @@
                 order: 3;
                 height: 330px;
             }
-            @media (min-width:601px) and (max-width:1281px) {
+            @media (min-width:1200px) and (max-width:1601px) {
                 height: 220px;
                 width: 40%;
                 padding: 15px 17px;
@@ -160,7 +173,7 @@
                 @media (min-width:601px) {
                     font-size: 16px;
                 }
-                @media (min-width:601px) and (max-width:1281px) {
+                @media (min-width:1200px) and (max-width:1601px) {
                     font-size: 12px;
                 }
             }
