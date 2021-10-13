@@ -15,14 +15,21 @@
             left: 0;
             top: 0;
             z-index: -1;
-            @media (min-width:601px) and (max-width:1281px) {
+            @media (min-width:1200px) and (max-width:1601px) {
                 width: 267px;
                 height: 400px;
             }
+            @media (min-width: 601px) and (max-width: 1199px) {
+                width: 203px;
+                height: 302px;
+            }
         }
     }
-    @media (min-width:601px) and (max-width:1281px) {
+    @media (min-width:1200px) and (max-width:1601px) {
         padding: 100px 0 140px; 
+    }
+    @media (min-width: 601px) and (max-width: 1199px) {
+        padding: 80px 0;
     }
     &__content {
         padding-top: 40px;
@@ -33,12 +40,14 @@
             margin-top: 70px;
             justify-content: space-between;
         }
-        @media (min-width:601px) and (max-width: 1489px) {
-            justify-content: space-evenly;
-        }
-        @media (min-width:601px) and (max-width:1281px) {
+        @media (min-width:1200px) and (max-width:1601px) {
             justify-content: space-between;
             margin-top: 60px;
+        }
+        @media (min-width: 601px) and (max-width: 1199px) {
+            justify-content: space-between;
+            margin-top: 43px;
+            padding: 0;
         }
     }
     &__item {
@@ -47,8 +56,11 @@
         @media (min-width:601px) {
             margin-bottom: 60px;
         }
-        @media (min-width:601px) and (max-width:1281px) {
+        @media (min-width:1200px) and (max-width:1601px) {
             margin-bottom: 40px;
+        }
+        @media (min-width: 601px) and (max-width: 1199px) {
+            margin-bottom: 28px;
         }
         a {
             display: block;
@@ -61,11 +73,11 @@
                 width: 365px;
                 height: 316px;
             }
-            @media (min-width:601px) and (max-width:1281px) {
+            @media (min-width:1200px) and (max-width:1601px) {
                 width: 245px;
                 height: 212px;
             }
-            @media (min-width:601px) and (max-width:769px) {
+            @media (min-width: 601px) and (max-width: 1199px) {
                 width: 174.86px;
                 height: 151.31px;
             }
@@ -91,10 +103,15 @@
                 height: 40px;
                 font-size: 18px;
             }
-            @media (min-width:601px) and (max-width:1281px) {
+            @media (min-width:1200px) and (max-width:1601px) {
                 width: 89px;
                 height: 27px;
                 font-size: 12px;
+            }
+            @media (min-width: 601px) and (max-width: 1199px) {
+                width: 63.15px;
+                height: 19.14px;
+                font-size: 8px;
             }
         }
         &-left {
@@ -106,9 +123,12 @@
                 border-radius: 20px 0px 0px 20px; 
                 border-right: 3px solid #74077E;
             }
-            @media (min-width:601px) and (max-width:1281px) {
+            @media (min-width:1200px) and (max-width:1601px) {
                 border-radius: 13px 0px 0px 13px;
                 border-right: 2px solid #74077E;
+            }
+            @media (min-width: 601px) and (max-width: 1199px) {
+                border-right: 1px solid #74077E;
             }
             span {
                 left: 0;
@@ -116,7 +136,7 @@
                 @media (min-width:601px) {
                     border-radius: 20px 0px;
                 }
-                @media (min-width:601px) and (max-width:1281px) {
+                @media (min-width:1200px) and (max-width:1601px) {
                     border-radius: 13px 0px;
                 }
             }
@@ -128,7 +148,7 @@
             @media (min-width:601px) {
                 border-radius: 0px 20px 20px 0px; 
             }
-            @media (min-width:601px) and (max-width:1281px) {
+            @media (min-width:1200px) and (max-width:1601px) {
                 border-radius:0 13px 13px 0px;
             }
             span {
@@ -137,7 +157,7 @@
                 @media (min-width:601px) {
                     border-radius: 0px 20px;
                 }
-                @media (min-width:601px) and (max-width:1281px) {
+                @media (min-width:1200px) and (max-width:1601px) {
                     border-radius:0 13px;
                 }
             }
@@ -162,10 +182,16 @@
             height: 50px;
             font-size: 18px;
         }
-        @media (min-width:601px) and (max-width:1281px) {
+        @media (min-width:1200px) and (max-width:1601px) {
             width: 224px;
             height: 44px;
             font-size: 16px;
+        }
+        @media (min-width: 601px) and (max-width: 1199px) {
+            margin-top: 17px;
+            width: 159.87px;
+            height: 31.4px;
+            font-size: 12px;
         }
     }
 }

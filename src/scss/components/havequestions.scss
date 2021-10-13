@@ -8,11 +8,11 @@
         margin: 0 auto;
         padding-left: 57px;
     }
-    @media (min-width:601px) and (max-width:1281px) {
+    @media (min-width:1200px) and (max-width:1601px) {
         max-width: 1020px;
     }
-    @media (min-width:601px) and (max-width:769px) {
-        padding: 20px;
+    @media (min-width: 601px) and (max-width: 1199px) {
+        max-width: 728px;
     }
     &__content {
         @media (min-width:601px) {
@@ -20,8 +20,8 @@
             justify-content: space-between;
             align-items: flex-end;
         }
-        @media (min-width:601px) and (max-width:769px) {
-            flex-wrap: wrap;
+        @media (min-width: 601px) and (max-width: 1199px) {
+
         }
         
     }
@@ -38,12 +38,12 @@
                 font-size: 48px;
                 text-align: left;
             }    
-            @media (min-width:601px) and (max-width:1281px) {
+            @media (min-width:1200px) and (max-width:1601px) {
                 font-size: 30px;
             }  
-            @media (min-width:601px) and (max-width:769px) {
+            @media (min-width: 601px) and (max-width: 1199px) {
                 font-size: 21px;
-            }     
+            }    
         }
         p {
             font-family: 'Geometria',sans-serif;
@@ -61,14 +61,16 @@
                 font-size: 18px;
                 margin-top: 15px;
             }
-            @media (min-width:601px) and (max-width:1281px) {
+            @media (min-width:1200px) and (max-width:1601px) {
                 font-size: 14px;
                 text-align: left;
                 max-width: 375px;
             }
-            @media (min-width:601px) and (max-width:769px) {
+            @media (min-width: 601px) and (max-width: 1199px) {
+                margin-top: 9px;
+                max-width: 265.51px;
+                text-align: left;
                 font-size: 10px;
-                width: 265px;
             }
         }
     }
@@ -80,15 +82,11 @@
                 margin-bottom: 0;
             }
         }
-        @media (min-width:601px) and (max-width:750px) {
-            width: 100%;
-        }
-        @media (min-width:601px) and (max-width:1281px) {
+        @media (min-width:1200px) and (max-width:1601px) {
             width: 55%;
         }
-        @media (min-width:601px) and (max-width:769px) {
-            width: 100%;
-            margin-top: 20px;
+        @media (min-width: 601px) and (max-width: 1199px) {
+            width: 55%;
         }
     }
 }

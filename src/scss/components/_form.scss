@@ -21,6 +21,9 @@
             @media (min-width: 601px) and (max-width: 1199px) {
                 font-size: 10px;
             }
+            @media (min-width:1200px) and (max-width:1601px) {
+                font-size: 14px;
+            }
         }
         @media (min-width: 601px) and (max-width: 1199px) {
             height: 32.79px;
@@ -79,6 +82,9 @@
             justify-content: space-between;
             max-height: 330px;
         }
+        @media (min-width: 601px) and (max-width: 1199px) {
+            max-height: 166px;
+        }
         input {
             &:not([type=submit]) {
                 background: #FFFFFF;
@@ -101,6 +107,11 @@
                     height: 40px;
                     margin-bottom: 20px;
                 }
+                @media (min-width: 601px) and (max-width: 1199px) {
+                    width: 160.59px;
+                    height: 28.55px;
+                    margin-bottom: 14px;
+                }
                 &::placeholder {
                     font-family: 'Geometria',sans-serif;
                     font-style: normal;
@@ -113,6 +124,9 @@
                     }
                     @media (min-width:1200px) and (max-width:1601px) {
                         font-size: 12px;
+                    }
+                    @media (min-width: 601px) and (max-width: 1199px) {
+                        font-size: 10px;
                     }
                 }
             }
@@ -141,6 +155,12 @@
                 height: 40px;
                 font-size: 14px;
             }
+            @media (min-width: 601px) and (max-width: 1199px) {
+                width: 160.59px;
+                height: 28.55px;
+                margin-top: 7px;
+                font-size: 10px;
+            }
         }
         textarea {
             background: #FFFFFF;
@@ -163,6 +183,12 @@
                 padding: 15px 17px;
                 border-radius: 20px;
             }
+            @media (min-width: 601px) and (max-width: 1199px) {
+                width: 40%;
+                height: 165.58px;
+                padding: 10px 12px;
+                border-radius: 14.2745px;
+            }
             &::placeholder {
                 font-family: 'Geometria',sans-serif;
                 font-style: normal;
@@ -175,6 +201,9 @@
                 }
                 @media (min-width:1200px) and (max-width:1601px) {
                     font-size: 12px;
+                }
+                @media (min-width: 601px) and (max-width: 1199px) {
+                    font-size: 10px;
                 }
             }
         }
