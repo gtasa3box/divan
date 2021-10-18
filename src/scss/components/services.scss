@@ -85,12 +85,24 @@
         height: 116px;
         @media (min-width:601px) {
             height: 143px;
+            background-size: initial;
         }
         @media (min-width:1200px) and (max-width:1601px) {
             height: 123px;
+            background-size: contain;
         }
         @media (min-width: 601px) and (max-width: 1199px) {
             height: 89.37px;
+            background-size: contain;
+        }
+        &_puff {
+            background-size: 40%;
+            @media (min-width:1200px) and (max-width:1601px) {
+                background-size: 40%;
+            } 
+            @media (min-width: 601px) and (max-width: 1199px) {
+                background-size: 40%;
+            }
         }
     }
     &__title {

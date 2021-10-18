@@ -49,6 +49,21 @@
             margin-top: 43px;
             padding: 0;
         }
+        &_more {
+            padding-top: 0;
+            @media (min-width:601px) {
+                margin-top: 0;
+            }
+            @media (min-width:1200px) and (max-width:1601px) {
+                margin-top: 0;
+            }
+            @media (min-width: 601px) and (max-width: 1199px) {
+                margin-top: 0;
+            }
+        }
+    }
+    #examples-more {
+        display: none;
     }
     &__item {
         display: flex;
@@ -175,6 +190,16 @@
         text-align: center;
         letter-spacing: 0.02em;
         color: #FFFFFF;
+        position: relative;
+        &::before {
+            content: 'Больше работ';
+            white-space: nowrap;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            transition: 0.3s ease;
+        }
         @media (min-width:601px) {
             margin: 0 auto;
             margin-top: 20px;
@@ -192,6 +217,11 @@
             width: 159.87px;
             height: 31.4px;
             font-size: 12px;
+        }
+        &.active {
+            &:before {
+                content: 'Свернуть';
+            }
         }
     }
 }

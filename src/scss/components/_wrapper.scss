@@ -12,6 +12,9 @@
         max-width: 728px;
         padding: 0;
     }
+    @media (min-width:1602px) and (max-width:1750px) {
+        padding: 0 15px;
+    }
 }
 html {
     scroll-behavior: smooth;

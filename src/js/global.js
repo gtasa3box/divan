@@ -3,7 +3,12 @@ $('#burger').on('click', function(){
     $('#burgerlink').toggleClass('active')
     $('.nav').toggleClass('active')
 });
-//dropdown
+//dropdown-examples
+$('.examples__btn').on('click', function(){
+  $(this).toggleClass('active') 
+  $($(this).data('target')).stop(true, false).slideToggle()  
+});
+//dropdown-question
 $('.questions__smalltitle').on('click', function(){
     $(this).toggleClass('active') 
     $($(this).data('target')).stop(true, false).slideToggle()  
