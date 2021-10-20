@@ -5,7 +5,7 @@
                 display: block;
                 position: relative;
                 background-position: center;
-                background-size: 100%;
+                background-size: 115%;
                 background-repeat: no-repeat;
                 height: 221px;
                 width: 345px;
@@ -14,7 +14,7 @@
                 border-radius: 20px;
                 transition: 0.3s ease;
                 &:hover {
-                    background-size: 120%;
+                    background-size: 125%;
                 }
                 @media (min-width:601px) {
                     width: 465px;
