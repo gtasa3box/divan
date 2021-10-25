@@ -39,7 +39,7 @@ try {
     $mail->setFrom('admin@himchistka-aprel.ru', 'Апрель Клининг'); // Адрес самой почты и имя отправителя
 
     // Получатель письма
-    $mail->addAddress('gtasa3box@gmail.com');  
+    $mail->addAddress('Aparelcleaning@mail.ru');  
     // $mail->addAddress('Aparelcleaning@mail.ru'); // Ещё один, если нужен
 
     // Прикрипление файлов к письму
