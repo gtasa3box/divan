@@ -11,11 +11,11 @@
                     <p>Санкт-Петербург, Руставели 13Б, Бц ручьи</p>
                 </div>
             </div>
-            <form action="" class="backcall__form form-backcall">
-                <input type="name" placeholder="Введите имя" required>
-                <input type="tel" placeholder="Введите свой телефон" required maxlength="14" onKeyPress="cislo()">
-                <input type="email" placeholder="Введите E-mail" required>
-                <textarea placeholder="Напишите сообщение" required></textarea>
+            <form enctype="multipart/form-data" method="post" id="form" onsubmit="send(event, 'mail.php')" class="backcall__form form-backcall">
+                <input name="name" type="name" placeholder="Введите имя" required>
+                <input name="number" type="tel" placeholder="Введите свой телефон" required maxlength="14" onKeyPress="cislo()">
+                <input name="email" type="email" placeholder="Введите E-mail" required>
+                <textarea name="text" placeholder="Напишите сообщение" required></textarea>
                 <input class="btn" type="submit" value="Отправить">
             </form>
         </div>

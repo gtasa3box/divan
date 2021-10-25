@@ -2,9 +2,9 @@
     <div class="popup-master__title title">
         <h2>Вызов мастера</h2>
     </div>
-    <form action="" class="form-popup-master">
-        <input type="name" placeholder="Введите имя" required>
-        <input type="tel" placeholder="Введите свой телефон" required maxlength="14" onKeyPress="cislo()">
+    <form enctype="multipart/form-data" method="post" id="form" onsubmit="send(event, 'mail.php')" class="form-popup-master">
+        <input name="name" type="name" placeholder="Введите имя" required>
+        <input name="number" type="tel" placeholder="Введите свой телефон" required maxlength="14" onKeyPress="cislo()">
         <select class="popup-master__select" name="" id="">
             <option disabled selected hidden>Категория услуг</option>
             <option value="">Услуга</option>
@@ -20,9 +20,9 @@
     <div class="popup-master__title title">
         <h2>Заказать звонок</h2>
     </div>
-    <form action="" class="form-popup-call">
-        <input type="name" placeholder="Введите имя" required>
-        <input type="tel" placeholder="Введите свой телефон" required maxlength="14" onKeyPress="cislo()">
+    <form enctype="multipart/form-data" method="post" id="form" onsubmit="send(event, 'mail.php')" class="form-popup-call">
+        <input name="name" type="name" placeholder="Введите имя" required>
+        <input name="number" type="tel" placeholder="Введите свой телефон" required maxlength="14" onKeyPress="cislo()">
         <p>- Наш менеджер свяжеться с вами в ближайшее время.</p>
         <input type="submit" class="btn">
     </form>

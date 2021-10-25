@@ -17,7 +17,7 @@ $body = "
 <h2>Заявка</h2>
 <b>Имя:</b> $name<br>
 <b>Почта:</b> $email<br><br>
-<b>Почта:</b> $number<br><br>
+<b>Телефон:</b> $number<br><br>
 <b>Сообщение:</b><br>$text
 ";
 
