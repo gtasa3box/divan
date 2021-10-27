@@ -73,6 +73,42 @@
             border-radius: 15px;
             background-color: white;
             padding: 153px 123px 153px 197px;
+            @media (max-width:601px) {
+                padding: 176px 29px 177px 87px;
+                min-width: 300px;
+            }
+            &:after {
+                content: '';
+                position: absolute;
+                top:0;
+                left: 0;
+                background-image: url(../img/popup/circle.png);
+                background-size: contain;
+                background-position: center;
+                background-repeat: no-repeat;
+                width: 115px;
+                height: 116px;
+                @media (min-width:601px) {
+                    width: 141px;
+                    height: 142px; 
+                }
+            }
+            &:before {
+                content: '';
+                position: absolute;
+                bottom:-1px;
+                right: 0;
+                background-image: url(../img/popup/circle2.png);
+                background-size: contain;
+                background-position: center;
+                background-repeat: no-repeat;
+                width: 115px;
+                height: 116px;
+                @media (min-width:601px) {
+                    width: 141px;
+                    height: 142px; 
+                }
+            }
             p {
                 font-family: 'Montserrat',sans-serif;
                 font-style: normal;
@@ -83,6 +119,9 @@
                 color: #000000;
                 max-width: 607px;
                 position: relative;
+                @media (max-width:601px) {
+                    font-size: 18px;
+                }
                 &:before {
                     content: '';
                     position: absolute;
@@ -95,6 +134,11 @@
                     background-repeat: no-repeat;
                     width: 71.5px;
                     height: 71.5px;
+                    @media (max-width:601px) {
+                        width: 54px;
+                        height: 54px;
+                        left: -64px;
+                    }
                 }
                 span {
                     background: linear-gradient(180deg, #76067D 52.08%, #7D73A8 77.6%, #83CFCD 100%);
