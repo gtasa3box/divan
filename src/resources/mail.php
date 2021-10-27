@@ -5,7 +5,7 @@ $method = $_SERVER['REQUEST_METHOD'];
 //Script Foreach
 $c = true;
 if ( $method === 'POST' ) {
-	$admin_email = 'gtasa3box@gmail.com';
+	$admin_email = 'aprelcleaning@mail.ru';
 	$form_subject = 'AprelKlining';
 
 	$massive = [];
