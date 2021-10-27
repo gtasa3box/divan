@@ -1,73 +1,50 @@
 <?php
-// Файлы phpmailer
-require 'PHPMailer.php';
-require 'SMTP.php';
-require 'Exception.php';
 
-// Переменные, которые отправляет пользователь
-$name = $_POST['name'];
-$email = $_POST['email'];
-$text = $_POST['text'];
-$number = $_POST['number'];
-$file = $_FILES['myfile'];
+$method = $_SERVER['REQUEST_METHOD'];
 
-// Формирование самого письма
-$title = "Заявка с Апрель Клининг";
-$body = "
-<h2>Заявка</h2>
-<b>Имя:</b> $name<br>
-<b>Почта:</b> $email<br><br>
-<b>Телефон:</b> $number<br><br>
-<b>Сообщение:</b><br>$text
-";
+//Script Foreach
+$c = true;
+if ( $method === 'POST' ) {
+	$admin_email = 'aprelcleaning@mail.ru';
+	$form_subject = 'AprelKlining';
 
-// Настройки PHPMailer
-$mail = new PHPMailer\PHPMailer\PHPMailer();
-try {
-    $mail->isSMTP();   
-    $mail->CharSet = "UTF-8";
-    $mail->SMTPAuth   = true;
-    //$mail->SMTPDebug = 2;
-    $mail->Debugoutput = function($str, $level) {$GLOBALS['status'][] = $str;};
+	$massive = [];
+	
+	$massive['name'] = htmlspecialchars(trim($_POST["name"]), ENT_QUOTES);
 
-    // Настройки вашей почты
-    $mail->Host       = 'smtp.jino.ru'; // SMTP сервера вашей почты
-    $mail->Username   = 'admin@himchistka-aprel.ru'; // Логин на почте
-    $mail->Password   = '8cc5y6hET'; // Пароль на почте
-    $mail->SMTPSecure = 'ssl';
-    $mail->Port       = 465;
-    $mail->setFrom('admin@himchistka-aprel.ru', 'Апрель Клининг'); // Адрес самой почты и имя отправителя
+	$massive['email'] = htmlspecialchars(trim($_POST["email"]), ENT_QUOTES);
 
-    // Получатель письма
-    $mail->addAddress('Aparelcleaning@mail.ru');  
-    // $mail->addAddress('Aparelcleaning@mail.ru'); // Ещё один, если нужен
+	$massive['usluga'] = htmlspecialchars(trim($_POST["usluga"]), ENT_QUOTES);
 
-    // Прикрипление файлов к письму
-if (!empty($file['name'][0])) {
-    for ($ct = 0; $ct < count($file['tmp_name']); $ct++) {
-        $uploadfile = tempnam(sys_get_temp_dir(), sha1($file['name'][$ct]));
-        $filename = $file['name'][$ct];
-        if (move_uploaded_file($file['tmp_name'][$ct], $uploadfile)) {
-            $mail->addAttachment($uploadfile, $filename);
-            $rfile[] = "Файл $filename прикреплён";
-        } else {
-            $rfile[] = "Не удалось прикрепить файл $filename";
-        }
-    }   
-}
-// Отправка сообщения
-$mail->isHTML(true);
-$mail->Subject = $title;
-$mail->Body = $body;    
+	$massive['text'] = htmlspecialchars(trim($_POST["text"]), ENT_QUOTES);
 
-// Проверяем отравленность сообщения
-if ($mail->send()) {$result = "success";} 
-else {$result = "error";}
+	$massive['number']  = htmlspecialchars(trim($_POST["number"]), ENT_QUOTES);
 
-} catch (Exception $e) {
-    $result = "error";
-    $status = "Сообщение не было отправлено. Причина ошибки: {$mail->ErrorInfo}";
+
+	foreach ( $massive as $key => $value ) {
+		if ( $value != "") {
+			$message .= "
+			" . ( ($c = !$c) ? '<tr>':'<tr style="background-color: #f8f8f8;">' ) . "
+				<td style='padding: 10px; border: #e9e9e9 1px solid;'><b>$key</b></td>
+				<td style='padding: 10px; border: #e9e9e9 1px solid;'>$value</td>
+			</tr>
+			";
+		}
+	}
 }
 
-// Отображение результата
-echo json_encode(["result" => $result, "resultfile" => $rfile, "status" => $status]);
+$message = "<table style='width: 100%;'>$message</table>";
+
+function adopt($text) {
+	return '=?UTF-8?B?'.Base64_encode($text).'?=';
+}
+
+$headers = "MIME-Version: 1.0" . PHP_EOL .
+"Content-Type: text/html; charset=utf-8" . PHP_EOL .
+'From: '.adopt($project_name).' <'.$admin_email.'>' . PHP_EOL .
+'Reply-To: '.$admin_email.'' . PHP_EOL;
+
+mail($admin_email, adopt($form_subject), $message, $headers );
+
+header('Location: http://'.$_SERVER['HTTP_HOST'].'/?popup=true');
+exit;

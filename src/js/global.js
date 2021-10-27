@@ -18,7 +18,10 @@ function cislo(){
     if (event.keyCode != 43 && event.keyCode < 48 || event.keyCode > 57)
     event.preventDefault();
 }
-
+// cross exit
+$('.popup-exellent__cross').on('click', function(){
+  $($(this).data('target')).toggleClass('active')
+});
 //slider-howto
 $('.slider-howto').slick({
     arrows: false,

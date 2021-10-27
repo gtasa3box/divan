@@ -2,14 +2,21 @@
     <div class="popup-master__title title">
         <h2>Вызов мастера</h2>
     </div>
-    <form enctype="multipart/form-data" method="post" id="form" onsubmit="send(event, 'mail.php')" class="form-popup-master">
+    <form action="mail.php" method="post" id="form" class="form-popup-master">
         <input name="name" type="name" placeholder="Введите имя" required>
         <input name="number" type="tel" placeholder="Введите свой телефон" required maxlength="14" onKeyPress="cislo()">
-        <select class="popup-master__select" name="" id="">
+        <select class="popup-master__select" name="usluga">
             <option disabled selected hidden>Категория услуг</option>
-            <option value="">Услуга</option>
-            <option value="">Услуга</option>
-            <option value="">Услуга</option>
+            <option value="Чистка дивана">Чистка дивана</option>
+            <option value="Чистка кресла">Чистка кресла</option>
+            <option value="Чистка кровати">Чистка кровати</option>
+            <option value="Чистка стула">Чистка стула</option>
+            <option value="Чистка матраса">Чистка матраса</option>
+            <option value="Чистка пуфа">Чистка пуфа</option>
+            <option value="Чистка углового дивана">Чистка углового дивана</option>
+            <option value="Хим. чистка ковровых покрытий">Хим. чистка ковровых покрытий</option>
+            <option value="Устранение неприятных запахов">Устранение неприятных запахов</option>
+            <option value="Мытьё окон, балконов и витрин">Мытьё окон, балконов и витрин</option>
         </select>
         <input type="submit" class="btn">
     </form>
@@ -20,11 +27,18 @@
     <div class="popup-master__title title">
         <h2>Заказать звонок</h2>
     </div>
-    <form enctype="multipart/form-data" method="post" id="form" onsubmit="send(event, 'mail.php')" class="form-popup-call">
+    <form action="mail.php" method="post" id="form" class="form-popup-call">
         <input name="name" type="name" placeholder="Введите имя" required>
         <input name="number" type="tel" placeholder="Введите свой телефон" required maxlength="14" onKeyPress="cislo()">
         <p>- Наш менеджер свяжеться с вами в ближайшее время.</p>
         <input type="submit" class="btn">
     </form>
     
+ </div>
+
+ <div class="popup-exellent <?php if($_GET['popup'] ) {echo "active";}?>" id="popup-exellent">
+     <div class="popup-exellent__body">
+        <p>Ваша заявка принята мы перезвоним Вам в <span>кратчайшее время!</span></p>
+        <a class="popup-exellent__cross" data-target="#popup-exellent"></a>
+    </div>
  </div>
