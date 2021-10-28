@@ -5,6 +5,7 @@ $method = $_SERVER['REQUEST_METHOD'];
 //Script Foreach
 $c = true;
 if ( $method === 'POST' ) {
+	$site_mail = 'aprelclining@himchistka-aprel.ru';
 	$admin_email = 'aprelcleaning@mail.ru';
 	$form_subject = 'AprelKlining';
 
@@ -41,7 +42,7 @@ function adopt($text) {
 
 $headers = "MIME-Version: 1.0" . PHP_EOL .
 "Content-Type: text/html; charset=utf-8" . PHP_EOL .
-'From: '.adopt($project_name).' <'.$admin_email.'>' . PHP_EOL .
+'From: '.adopt($project_name).' <'.$site_mail.'>' . PHP_EOL .
 'Reply-To: '.$admin_email.'' . PHP_EOL;
 
 mail($admin_email, adopt($form_subject), $message, $headers );
