@@ -7,7 +7,9 @@ $c = true;
 if ( $method === 'POST' ) {
 	$site_mail = 'aprelclining@himchistka-aprel.ru';
 	$admin_email = 'aprelcleaning@mail.ru';
-	$form_subject = 'AprelKlining';
+	$project_name = 'AprelClining';
+	$form_subject = 'AprelClining';
+
 
 	$massive = [];
 	
