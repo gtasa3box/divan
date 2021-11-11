@@ -224,4 +224,41 @@
             }
         }
     }
+    &-more {
+        &__grid {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        &__item {
+            width: 47%;
+            height: 120px;
+            display: block;
+            background-size: 115%;
+            background-position: center;
+            background-repeat: no-repeat;
+            border-radius: 9px;
+            transition: 0.3s ease;
+            cursor: pointer;
+            margin-bottom: 10px;
+            @media (min-width:601px) {
+                width: 19%;
+                height: 160px;
+                margin-bottom: 15px;
+            }
+            @media (min-width:1200px) and (max-width:1601px) {
+                width: 22%;
+                height: 180px;
+                margin-bottom: 15px;
+            }
+            @media (min-width: 601px) and (max-width: 1199px) {
+                width: 30%;
+                height: 150px;
+                margin-bottom: 15px;
+            }
+            &:hover {
+                background-size: 120%;
+            }
+        }
+    }
 }
