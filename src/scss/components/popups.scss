@@ -149,3 +149,27 @@
         }
     }
 }
+
+.top-btn {
+    display: block;
+    position: fixed;
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+    bottom: 50px;
+    right: 20px;
+    background-image: url(../img/top-btn.svg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: none;	
+    opacity:0.8;
+    transition: 0.3s ease;
+    @media (max-width:601px) {
+        width: 40px;
+        height: 40px;
+    }
+    &:hover {
+        opacity: 1;
+    }
+}
